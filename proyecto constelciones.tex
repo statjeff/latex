@@ -1,0 +1,96 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{hyperref}
+\geometry{a4paper, margin=1in}
+
+\title{Explorando las Constelaciones y sus Secretos Matem\'aticos}
+\author{}
+\date{}
+\begin{document}
+
+\maketitle
+
+\section*{Introducci\'on}
+Las constelaciones han fascinado a la humanidad desde tiempos inmemoriales, siendo utilizadas para la navegaci\'on, la agricultura y como parte esencial de muchas tradiciones culturales. Este proyecto tiene como objetivo analizar las constelaciones visibles desde la Tierra, incorporando elementos matem\'aticos y astron\'omicos para comprender su distribuci\'on, magnitud estelar, distancias y relevancia cultural. Adem\'as, se busca incluir visualizaciones interactivas y c\'alculos que enriquezcan la experiencia de la audiencia.
+
+\section*{Objetivos}
+\begin{itemize}
+    \item Investigar las caracter\'isticas principales de las constelaciones.
+    \item Analizar la magnitud aparente, distancia media y el tama\~no angular de algunas constelaciones seleccionadas.
+    \item Visualizar la disposici\'on del cielo nocturno desde distintas ubicaciones y estaciones del a\~no.
+    \item Explorar el movimiento propio de las estrellas y su impacto en la configuraci\'on futura de las constelaciones.
+\end{itemize}
+
+\section*{Metodolog\'ia}
+\subsection*{Estudio Hist\'orico y Cultural}
+Se realizar\'a una breve investigaci\'on sobre el significado hist\'orico de las constelaciones en diferentes culturas, como la occidental, china y mesoamericana, comparando sus patrones y aplicaciones pr\'acticas.
+
+\subsection*{Visualizaci\'on del Cielo Nocturno}
+Se emplear\'an herramientas como \textbf{Stellarium} para simular el cielo nocturno desde distintas ubicaciones geogr\'aficas y en diferentes \'epocas del a\~no. Adem\'as, se usar\'a Python para generar mapas personalizados con librer\'ias como \texttt{matplotlib} y \texttt{astropy}.
+
+\subsection*{An\'alisis Astron\'omico}
+\begin{itemize}
+    \item \textbf{Magnitudes estelares:} Se comparar\'an las magnitudes aparentes de las estrellas principales de varias constelaciones y se analizar\'a su relaci\'on con la distancia y la luminosidad.
+    \item \textbf{Distancias estelares:} Usando datos del cat\'alogo Gaia, se calcular\'a la distancia media de las estrellas principales en una constelaci\'on dada.
+    \item \textbf{Tama\~no angular:} Se determinar\'a el tama\~no angular de las constelaciones m\'as grandes y peque\~nas visibles desde el hemisferio norte y sur.
+\end{itemize}
+
+\subsection*{C\'alculos Matem\'aticos}
+\begin{itemize}
+    \item \textbf{Distancia mediante paralaje:} Se usar\'a la ecuaci\'on de paralaje para calcular distancias aproximadas a estrellas cercanas:
+    \begin{equation}
+        d = \frac{1}{p},
+    \end{equation}
+    donde $p$ es la paralaje en segundos de arco y $d$ est\'a en parsecs.
+    \item \textbf{Brillo relativo:} Se calcular\'a el brillo relativo entre estrellas mediante:
+    \begin{equation}
+        m_1 - m_2 = -2.5 \log \left(\frac{I_1}{I_2}\right).
+    \end{equation}
+\end{itemize}
+
+\subsection*{Simulaci\'on de Movimiento Estelar}
+Se estudiar\'a el movimiento propio de las estrellas utilizando datos reales para simular c\'omo cambiar\'an las constelaciones en un horizonte temporal de 50,000 a\~nos.
+
+\subsection*{Instrumento Experimental o Simulaci\'on}
+Se construir\'a un planisferio casero o un proyector de constelaciones con materiales sencillos (cart\'on, pl\'astico transparente, LEDs). Adem\'as, se crear\'an simulaciones interactivas para mostrar el movimiento de las estrellas.
+
+\section*{Resultados Esperados}
+\begin{itemize}
+    \item Mapas del cielo nocturno personalizados y simulaciones de movimiento propio.
+    \item Comparaciones cuantitativas de magnitudes aparentes, distancias y tama\~nos angulares de distintas constelaciones.
+    \item Un planisferio funcional para localizar constelaciones desde distintas ubicaciones.
+\end{itemize}
+
+\section*{Formato de Presentaci\'on}
+\subsection*{Estructura del Proyecto}
+\begin{enumerate}
+    \item \textbf{Introducci\'on:} Historia de las constelaciones y su importancia.
+    \item \textbf{Metodolog\'ia:} Descripci\'on de las herramientas, c\'alculos y simulaciones utilizadas.
+    \item \textbf{Resultados:} Gr\'aficos, mapas del cielo y demostraciones.
+    \item \textbf{Discusi\'on:} Reflexi\'on sobre los hallazgos, limitaciones y aplicaciones.
+    \item \textbf{Conclusi\'on:} Importancia cultural y astron\'omica de las constelaciones.
+\end{enumerate}
+
+\subsection*{Demostraciones Interactivas}
+\begin{itemize}
+    \item Un mapa del cielo nocturno que muestra las constelaciones visibles desde la ubicaci\'on del espectador.
+    \item Un planisferio o proyector de constelaciones.
+    \item Simulaciones del movimiento propio de las estrellas a lo largo del tiempo.
+\end{itemize}
+
+\section*{Herramientas y Recursos}
+\begin{itemize}
+    \item \textbf{Software:} Stellarium, Python (librer\'ias: \texttt{matplotlib}, \texttt{numpy}, \texttt{astropy}).
+    \item \textbf{Datos:} Cat\'alogos estelares como Gaia, SIMBAD y Vizier.
+    \item \textbf{Material Experimental:} Cart\'on, pl\'astico transparente, LEDs, etc.
+    \item \textbf{Referencias:} Libros como \textit{Astronom\'ia Fundamental} de Pasachoff, recursos de la NASA y ESA.
+\end{itemize}
+
+\section*{Conclusi\'on}
+Este proyecto permitir\'a explorar las constelaciones desde una perspectiva astron\'omica, cultural y matem\'atica, utilizando herramientas modernas y c\'alculos precisos. Adem\'as, fomentar\'a la comprensi\'on de los patrones estelares y su evoluci\'on futura, conectando el pasado con el futuro de nuestra visi\'on del cielo.
+
+\end{document}

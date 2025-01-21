@@ -1,0 +1,99 @@
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{hyperref}
+\geometry{a4paper, margin=1in}
+
+\title{Explorando Exoplanetas: Caracterizaci\'on y Posibilidad de Habitabilidad}
+\author{}
+\date{}
+\begin{document}
+
+\maketitle
+
+\section*{Introducci\'on}
+Desde el descubrimiento del primer exoplaneta en 1995, el estudio de estos mundos fuera de nuestro sistema solar ha sido un campo de investigaci\'on fascinante. Este proyecto tiene como objetivo explorar los m\'etodos de detecci\'on de exoplanetas, su clasificaci\'on y las condiciones necesarias para la habitabilidad, integrando c\'alculos y el an\'alisis de datos astron\'omicos.
+
+\section*{Objetivo General}
+Investigar los m\'etodos de detecci\'on, caracterizaci\'on y criterios de habitabilidad de exoplanetas mediante el uso de c\'alculos astron\'omicos y el an\'alisis de datos reales de misiones como Kepler, TESS o James Webb.
+
+\section*{Componentes Cient\'ificos y T\'ecnicos}
+
+\subsection*{1. M\'etodos de Detecci\'on de Exoplanetas}
+\textbf{Tr\'ansitos:} Analizar la curva de luz de una estrella para identificar ca\'idas peri\'odicas en su brillo causadas por el paso de un planeta frente a ella.
+\begin{itemize}
+    \item \textbf{C\'alculos:} Determinaci\'on del radio del exoplaneta mediante:
+    \begin{equation}
+        \frac{\Delta F}{F} = \left(\frac{R_p}{R_*}\right)^2,
+    \end{equation}
+    donde $\Delta F/F$ es la disminuci\'on relativa del flujo estelar, $R_p$ es el radio del planeta y $R_*$ es el radio de la estrella.
+\end{itemize}
+
+\textbf{Velocidad Radial:} Estudiar el desplazamiento Doppler en el espectro de una estrella causado por la influencia gravitacional del planeta.
+\begin{itemize}
+    \item \textbf{C\'alculos:} Determinaci\'on de la masa del exoplaneta mediante:
+    \begin{equation}
+        K = \left(\frac{2 \pi G}{P}\right)^{1/3} \frac{M_p \sin i}{(M_* + M_p)^{2/3}},
+    \end{equation}
+    donde $K$ es la amplitud de la velocidad radial, $P$ el periodo orbital, $M_p$ la masa del planeta y $M_*$ la masa de la estrella.
+\end{itemize}
+
+\subsection*{2. Clasificaci\'on de Exoplanetas}
+\begin{itemize}
+    \item \textbf{Tama\~no:} Dividir en tipos como J\'upiters calientes, supertierras y an\'alogos terrestres.
+    \item \textbf{Distancia a la estrella:} Identificar planetas en la zona habitable mediante la ecuaci\'on:
+    \begin{equation}
+        S = \frac{L_*}{4 \pi d^2},
+    \end{equation}
+    donde $S$ es la irradiancia en la superficie del planeta, $L_*$ es la luminosidad de la estrella y $d$ la distancia entre la estrella y el planeta.
+\end{itemize}
+
+\subsection*{3. Criterios de Habitabilidad}
+\begin{itemize}
+    \item \textbf{Zona Habitable:} Determinar si un planeta est\'a en la regi\'on donde el agua puede permanecer en estado l\'iquido.
+    \item \textbf{Atm\'osfera:} Analizar la composici\'on atmosf\'erica mediante espectroscop\'ia para buscar huellas de vida como ox\'igeno, metano o vapor de agua.
+    \item \textbf{Simulaciones:} Crear un modelo de balance energ\'etico para calcular la temperatura media del planeta:
+    \begin{equation}
+        T = \left(\frac{L_*(1-A)}{16 \pi \sigma d^2}\right)^{1/4},
+    \end{equation}
+    donde $A$ es el albedo del planeta y $\sigma$ es la constante de Stefan-Boltzmann.
+\end{itemize}
+
+\section*{Metodolog\'ia}
+\begin{enumerate}
+    \item Recolecci\'on de datos de cat\'alogos de exoplanetas (NASA Exoplanet Archive, Kepler, TESS).
+    \item An\'alisis de curvas de luz reales para identificar tr\'ansitos.
+    \item Simulaciones en Python para calcular zonas habitables y temperaturas.
+    \item Visualizaci\'on de los sistemas planetarios usando herramientas como \textit{matplotlib} y \textit{astropy}.
+\end{enumerate}
+
+\section*{Demostraciones Pr\'acticas}
+\begin{itemize}
+    \item Crear una curva de luz simulada que represente un tr\'ansito planetario.
+    \item Simulaci\'on de un sistema estelar con varios exoplanetas y sus \textit{zonas habitables}.
+    \item C\'alculos interactivos del radio y masa de exoplanetas a partir de datos reales.
+\end{itemize}
+
+\section*{Herramientas para el Proyecto}
+\begin{itemize}
+    \item \textbf{Software:} Python (librer\'ias: \textit{numpy}, \textit{matplotlib}, \textit{astropy}).
+    \item \textbf{Datos:} NASA Exoplanet Archive, cat\'alogos de Kepler y TESS.
+    \item \textbf{Materiales:} Computadora con capacidad para simular y procesar datos astron\'omicos.
+\end{itemize}
+
+\section*{Formato del Proyecto}
+\begin{enumerate}
+    \item \textbf{Introducci\'on:} Contexto hist\'orico y relevancia del estudio de exoplanetas.
+    \item \textbf{Metodolog\'ia:} Explicaci\'on de los m\'etodos y herramientas utilizadas.
+    \item \textbf{Resultados:} Gr\'aficos, c\'alculos y visualizaciones.
+    \item \textbf{Discusi\'on:} Implicaciones de los hallazgos y posibles mejoras en los m\'etodos de detecci\'on.
+    \item \textbf{Conclusi\'on:} Resumen de los principales resultados y perspectivas futuras.
+\end{enumerate}
+
+\section*{Conclusi\'on}
+Este proyecto busca explorar los exoplanetas desde una perspectiva integral, analizando c\'alculos de detecci\'on, caracterizaci\'on y condiciones de habitabilidad. La combinaci\'on de datos reales, simulaciones y c\'alculos permitir\'a comprender mejor la diversidad de mundos en nuestra galaxia y las posibilidades de encontrar vida en ellos.
+
+\end{document}
