@@ -1,0 +1,108 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, graphicx, geometry}
+\geometry{a4paper, margin=1in}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta, 
+    urlcolor=cyan,
+}
+
+\title{\textbf{Proyecto de Feria de Ciencias: Las Fases de la Luna}}
+\author{Nombre del estudiante}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+
+\section{Introducción}
+Las fases de la Luna son un fenómeno astronómico fascinante que resulta del movimiento relativo entre el Sol, la Tierra y la Luna. En este proyecto, exploraremos las causas de las fases lunares, realizaremos cálculos avanzados para predecir sus posiciones y diseñaremos un modelo físico y matemático para comprender mejor el proceso.
+
+\section{Objetivo}
+El objetivo de este proyecto es:
+\begin{itemize}
+    \item Explicar el fenómeno de las fases de la Luna desde un enfoque científico y matemático.
+    \item Realizar cálculos para determinar las posiciones relativas de la Tierra, la Luna y el Sol en diferentes fases lunares.
+    \item Crear un modelo visual o simulado para presentar en la feria de ciencias.
+\end{itemize}
+
+\section{Marco Teórico}
+\subsection{Descripción de las Fases Lunares}
+La Luna tiene ocho fases principales, que dependen de la fracción iluminada visible desde la Tierra:
+\begin{itemize}
+    \item Luna nueva
+    \item Cuarto creciente
+    \item Luna llena
+    \item Cuarto menguante
+\end{itemize}
+Esto ocurre debido al ángulo formado entre el Sol, la Tierra y la Luna.
+
+\subsection{Órbita de la Luna}
+La órbita de la Luna es elíptica, con un semieje mayor promedio de 384,400 km. Su período orbital, conocido como mes sinódico, es de aproximadamente 29.53 días.
+
+\section{Cálculos Matemáticos}
+\subsection{Ángulo Sol-Tierra-Luna (\( \theta \))}
+El ángulo \( \theta \) que determina la fase lunar se puede calcular como:
+\[
+\theta = 2\pi \frac{t}{T}
+\]
+donde:
+\begin{itemize}
+    \item \( t \): Tiempo transcurrido desde la última luna nueva (en días).
+    \item \( T \): Período sinódico de la Luna (29.53 días).
+\end{itemize}
+
+\subsection{Fracción Iluminada (\( f \))}
+La fracción iluminada visible desde la Tierra está dada por:
+\[
+ f = \frac{1}{2} \left( 1 + \cos(\theta) \right)
+\]
+\subsection{Distancia Tierra-Luna}
+La distancia \( d \) se aproxima mediante:
+\[
+d = a (1 - e^2) / (1 + e \cos(\nu))
+\]
+donde:
+\begin{itemize}
+    \item \( a \): Semieje mayor (384,400 km).
+    \item \( e \): Excentricidad de la órbita lunar (0.0549).
+    \item \( \nu \): Anomalía verdadera de la órbita.
+\end{itemize}
+
+\section{Modelo Experimental}
+\subsection{Materiales}
+\begin{itemize}
+    \item Una lámpara para representar el Sol.
+    \item Una esfera para representar la Tierra.
+    \item Otra esfera más pequeña para la Luna.
+    \item Un soporte giratorio.
+\end{itemize}
+
+\subsection{Procedimiento}
+\begin{enumerate}
+    \item Coloca la lámpara en el centro del modelo.
+    \item Sitúa la "Tierra" en un soporte giratorio a una distancia fija de la lámpara.
+    \item Mueve la "Luna" alrededor de la "Tierra" mientras observas las fases desde un punto fijo en la "Tierra".
+\end{enumerate}
+
+\section{Resultados Esperados}
+Se espera observar que las fases lunares son consecuencia directa de la posición relativa del Sol, la Tierra y la Luna. Los cálculos realizados permitirán predecir con precisión las fases y las distancias relativas.
+
+\section{Conclusiones}
+Este proyecto demuestra cómo las fases lunares son un fenómeno predecible basado en las leyes de la física y la geometría. La combinación de teoría, cálculos y modelos experimentales permite comprender mejor este fenómeno.
+
+\section{Referencias}
+\begin{enumerate}
+    \item "Astronomy Today" de Chaisson y McMillan.
+    \item "Introduction to Astronomy and Astrophysics" de Zeilik y Gregory.
+    \item Recursos de la NASA: \url{https://moon.nasa.gov}
+\end{enumerate}
+
+\end{document}

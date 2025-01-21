@@ -1,0 +1,118 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb, graphicx, geometry}
+\geometry{a4paper, margin=1in}
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta, 
+    urlcolor=cyan,
+}
+
+\title{\textbf{Proyecto de Feria de Ciencias: Detección de Exoplanetas}}
+\author{Nombre del estudiante}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\newpage
+
+\section{Introducción}
+Los exoplanetas, o planetas fuera de nuestro sistema solar, son objetos fascinantes que ofrecen pistas sobre la formación y evolución de sistemas planetarios. Este proyecto tiene como objetivo explorar los métodos científicos para detectarlos, con un enfoque en el método de tránsito y sus cálculos asociados.
+
+\section{Objetivo}
+El objetivo principal es:
+\begin{itemize}
+    \item Explicar los principales métodos de detección de exoplanetas, con énfasis en el método de tránsito.
+    \item Realizar cálculos avanzados para determinar propiedades como el radio y la masa del exoplaneta.
+    \item Diseñar un modelo experimental para simular un tránsito planetario.
+\end{itemize}
+
+\section{Marco Teórico}
+\subsection{Métodos de Detección de Exoplanetas}
+\begin{enumerate}
+    \item \textbf{Velocidad radial}: Detecta exoplanetas midiendo el desplazamiento Doppler en la luz de una estrella debido al tirón gravitacional del planeta.
+    \item \textbf{Método de tránsito}: Observa disminuciones periódicas en el brillo de una estrella cuando un planeta pasa frente a ella.
+    \item \textbf{Microlente gravitacional}: Usa los efectos de la gravedad para amplificar la luz de una estrella lejana.
+\end{enumerate}
+
+\subsection{Método de Tránsito}
+El método de tránsito implica la medición de la caída en el brillo relativo de una estrella cuando un planeta cruza frente a ella. Esto permite determinar propiedades clave del exoplaneta, como su tamaño y órbita.
+
+\section{Cálculos Matemáticos}
+\subsection{Radio del Exoplaneta (\( R_p \))}
+El radio del exoplaneta puede calcularse usando:
+\[
+\frac{\Delta F}{F} = \left(\frac{R_p}{R_*}\right)^2
+\]
+donde:
+\begin{itemize}
+    \item \( \Delta F / F \): Disminución relativa en el flujo estelar.
+    \item \( R_p \): Radio del planeta.
+    \item \( R_* \): Radio de la estrella.
+\end{itemize}
+Reorganizando:
+\[
+R_p = R_* \sqrt{\frac{\Delta F}{F}}
+\]
+
+\subsection{Periodo Orbital (\( P \))}
+El periodo orbital se puede calcular mediante la tercera ley de Kepler:
+\[
+P^2 = \frac{4\pi^2 a^3}{G M_*}
+\]
+donde:
+\begin{itemize}
+    \item \( a \): Semieje mayor de la órbita.
+    \item \( M_* \): Masa de la estrella.
+    \item \( G \): Constante de gravitación universal.
+\end{itemize}
+
+\subsection{Velocidad Radial}
+La velocidad radial inducida por un exoplaneta está dada por:
+\[
+K = \frac{(2 \pi G)^{1/3} M_p \sin i}{P^{1/3} (M_* + M_p)^{2/3}}
+\]
+donde:
+\begin{itemize}
+    \item \( K \): Amplitud de la velocidad radial.
+    \item \( M_p \): Masa del planeta.
+    \item \( i \): Inclinación orbital.
+\end{itemize}
+
+\section{Modelo Experimental}
+\subsection{Materiales}
+\begin{itemize}
+    \item Fuente de luz para simular una estrella.
+    \item Esfera pequeña para simular un exoplaneta.
+    \item Fotómetro o sensor de luz.
+    \item Plataforma giratoria.
+\end{itemize}
+
+\subsection{Procedimiento}
+\begin{enumerate}
+    \item Configura la fuente de luz como la "estrella".
+    \item Coloca la esfera en una trayectoria que pase frente a la "estrella" para simular un tránsito.
+    \item Usa el fotómetro para medir la variación en la intensidad de luz percibida.
+    \item Registra los datos y calcula el radio del "planeta" usando las fórmulas descritas.
+\end{enumerate}
+
+\section{Resultados Esperados}
+Se espera observar una disminución en la intensidad de luz registrada durante el tránsito del exoplaneta simulado. Los cálculos deben coincidir con los valores medidos experimentalmente.
+
+\section{Conclusiones}
+Este proyecto permite comprender los principios detrás de la detección de exoplanetas mediante el método de tránsito. Los cálculos realizados reflejan cómo los astrónomos estiman las propiedades físicas de planetas lejanos.
+
+\section{Referencias}
+\begin{enumerate}
+    \item "Exoplanet Detection Methods" de Perryman.
+    \item "Introduction to Planetary Science" de Lodders y Fegley.
+    \item NASA Exoplanet Archive: \url{https://exoplanetarchive.ipac.caltech.edu}
+\end{enumerate}
+
+\end{document}
